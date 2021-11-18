@@ -18,3 +18,5 @@ for _ in range(N):
 
 signal_list.reverse()
 print(signal_list)
+
+## 시간초과 .. 풀이를 봤는데 이해가 되질 않는다 ..

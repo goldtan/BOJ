@@ -24,7 +24,7 @@ for idx, i in enumerate(num_list):
                 print("+")
             for _ in range(n - idx):
                 idx += 1
-                if num_stack.pop() != num_list[idx]:
+                if num_stack.pop() != num_list[idx-1]:
                     print("NO")
                     BREAK_POINT =1
                     break
