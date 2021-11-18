@@ -10,13 +10,15 @@ for _ in range(N):
     card = int(sys.stdin.readline())
     heapq.heappush(cards, card)
 
-sum_card = 0
+num = []
 
 if N == 1:
-    print(heapq.heappop(cards))
+    print(0)
 else:
-    while cards:
-        sum_card += heapq.heappop(cards)
+    while len(cards) > 1:
+        sum_card = heapq.heappop(cards) + heapq.heappop(cards)
+        num.append(sum_card)
+        heapq.heappush(cards,sum_card)
+    print(sum(num))
 
-
-print(sum_card)
+# N이 1이면 비교할 필요가 없는데 자꾸 한 묶음의 카드 수를 출력했음

@@ -31,3 +31,5 @@ for _ in range(len(bags)):
     
 
 print(sum_price)
+
+# 멸망
