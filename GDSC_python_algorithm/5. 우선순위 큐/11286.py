@@ -15,3 +15,5 @@ for _ in range(N):
             print(0)
     else :
         heapq.heappush(heap, (abs(x),x))
+
+# 왜 얘만 커밋이 안되는거지
